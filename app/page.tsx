@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h3>{tg?.initDataUnsafe.user?.first_name || 'НЕТУ'}</h3>
+      <h3>{tg ? JSON.stringify(tg) : 'НЕТУ'}</h3>
     </main>
   )
 }
